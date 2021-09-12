@@ -195,9 +195,10 @@ header .container .logo img {
     width: 110px;
   }
 }
-.social .container ul li a {
+.social .container ul li {
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
+  cursor: pointer;
   transition: var(--main-duration);
   width: 40px;
   height: 40px;
@@ -206,27 +207,27 @@ header .container .logo img {
   justify-content: center;
 }
 @media (max-width: 767px) {
-  .social .container ul li a {
+  .social .container ul li {
     width: 30px;
     height: 30px;
   }
 }
-.social .container ul li a:not(:first-child) {
+.social .container ul li:not(:first-child) {
   margin-left: 10px;
 }
-.social .container ul li a:hover {
+.social .container ul li:hover {
   border-color: var(--hover-color);
 }
-.social .container ul li a i {
+.social .container ul li i {
   color: hsl(0, 0%, 100%);
   font-size: 18px;
 }
-.social .container ul li a:hover i {
+.social .container ul li:hover i {
   color: var(--hover-color);
   transition: var(--main-duration);
 }
 @media (max-width: 767px) {
-  .social .container ul li a i {
+  .social .container ul li i {
     font-size: 14px;
   }
 }
